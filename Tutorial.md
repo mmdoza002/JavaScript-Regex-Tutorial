@@ -60,6 +60,8 @@ https?          Because of the `?` Matches 'https', 'http'.
 
 ### The OR Operator
 
+The purpose of an OR operator is to match the characters on the left or right of the operator, essentially serving as an or, as in and/or. Using the | as in m|M would match either m or an M from the string. If we had used ```https?:\/\/(www\.)?[\d-a|A``` it would search for a OR A.
+
 ### Flags
 
 ### Character Escapes

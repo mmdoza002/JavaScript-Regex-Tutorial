@@ -58,6 +58,16 @@ https?          Because of the `?` Matches 'https', 'http'.
 
 ### Character Classes
 
+Character Classes ensure that a given sequence of characters matches a Larger set of characters. 
+
+
+```text
+[a-z]          Matches lowercase alphabetic characters between a and z
+\w             Matches a single word
+\d             Matches a single character that is a digit 0-9
+.              Matches any character
+```
+
 ### The OR Operator
 
 The purpose of an OR operator is to match the characters on the left or right of the operator, essentially serving as an or, as in and/or. Using the | as in m|M would match either m or an M from the string. If we had used ```https?:\/\/(www\.)?[\d-a|A``` it would search for a OR A.

@@ -34,7 +34,23 @@ $               Matches a string that ends with
 
 ### Quantifiers
 
-### Quantifiers
+Quantifiers communicate to the regex engine that it MUST match the Quantity of the character or expression to its LEFT. 
+There are two types of Quantifiers; Greedy and Lazy, each type has the same description.
+- `* and *? `           Matches Zero or more times. 
+- `+ and +? `           Matches One or more times.
+- `? and ?? `           Matches Zero or One times.
+- `{n} and {n}? `       Matches exactly n times.
+- `{n,} and {n,}?  `    Matches at least n times.
+- `{n,m} and {n,m}? `   Matches from n to m times.
+
+Examples include:
+
+```text
+https?          Because of the `?` Matches 'https', 'http'. 
+[\da-z\.-]+     Because of the `+` it matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
+[a-z\.]{2,6}    Because of the `{2,6}` it matches 2 to 6 copies of the sequence [a-z\.]
+[\/\w \.-]*     Because of the `*` it matches '/', '.', '-', 'www', '//'
+```
 
 ### Grouping Constructs
 

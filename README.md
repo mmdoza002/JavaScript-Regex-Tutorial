@@ -82,3 +82,26 @@ Character Classes ensure that a given sequence of characters matches a Larger se
 ### The OR Operator
 
 The purpose of an OR operator is to match the characters on the left or right of the operator, essentially serving as an or, as in and/or. Using the | as in m|M would match either m or an M from the string. If we had used ```https?:\/\/(www\.)?[\d-a|A``` it would search for a OR A.
+
+### Flags
+
+A flag changes the default searching behavior of a regular expression. It makes a regex search in a different way.
+
+A flag is denoted using a single lowercase alphabetic character.
+
+In JavaScript regex, we have a total of 6 flags, each serving a different purpose.
+
+| Flag  | Name             | Modifocation                                                |
+|--     |------------------|-------------------------------------------------------------|
+|   i   |  Ignore Casing   |      Makes the expression search case-insensitively.        |
+|   g   |  Global          |      Makes the expression search for all occurrences.       |
+|   s   |  Dot All         |      Makes the wild character . match newlines as well.     |
+|   m   |  Multiline       |      Makes the boundary characters ^ and $ match the beginning and ending of every single line instead of the beginning and ending of the whole string.                                                                                  |
+|   y   |  Stick           |      Makes the expression start its searching from the index indicated in its lastIndex property.                                                                      |
+|   u   |  Unicode         |      Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.                                                |
+
+### Character Escapes
+
+## Author
+
+Martin Mendoza [GitHub](https://github.com/mmdoza002)
